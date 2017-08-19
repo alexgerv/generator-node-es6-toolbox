@@ -1,0 +1,79 @@
+{
+  "name": "generator-node-es6-toolbox",
+  "version": "1.0.0",
+  "description": "Opinionated nodejs stack with tests, documentation, ES6 support through babel.",
+  "author": {
+    "name": "Alex Gervais",
+    "email": "alex.gervais@gogap.co",
+    "url": "gogap.co"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/app/index.js",
+  "keywords": [
+    "yeoman",
+    "yeoman-generator",
+    "nodejs",
+    "es6"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "coveralls": "^2.13.1",
+    "del-cli": "^1.1.0",
+    "eslint": "^4.1.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^20.0.0",
+    "nsp": "^2.6.3",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-test": "^1.6.0"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "lodash": "^4.17.4",
+    "ncp": "^2.0.0",
+    "yeoman-generator": "^1.0.0",
+    "yosay": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "*"
+    }
+  },
+  "scripts": {
+    "prebuild": "del generators",
+    "build": "babel generators-src -d generators --ignore templates",
+    "postbuild": "ncp generators-src/app/templates generators/app/templates",
+    "build:watch": "npm-watch",
+    "pretest": "npm run lint",
+    "lint": "eslint .",
+    "test": "jest",
+    "coverage": "npm test -- --coverage",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
+    "prepublish": "nsp check && npm run lint && npm test && npm run build",
+    "postpublish": "git push --follow-tags"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "alexgerv/generator-node-es6-toolbox",
+  "license": "MIT"
+}
