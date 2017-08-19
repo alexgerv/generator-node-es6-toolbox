@@ -1,6 +1,4 @@
-# generator-node-es6-toolbox [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/alexgerv/generator-node-es6-toolbox.svg)](https://greenkeeper.io/)
+# generator-node-es6-toolbox [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Greenkeeper badge][greenkeeper-url]][greenkeeper-url]
 > Opinionated nodejs stack with tests, documentation, ES6 support through babel.
 
 ## Installation
@@ -31,3 +29,4 @@ MIT © [Alex Gervais](gogap.co)
 [daviddm-url]: https://david-dm.org/alexgerv/generator-node-es6-toolbox
 [coveralls-image]: https://coveralls.io/repos/alexgerv/generator-node-es6-toolbox/badge.svg
 [coveralls-url]: https://coveralls.io/r/alexgerv/generator-node-es6-toolbox
+[greenkeeper-url]: https://badges.greenkeeper.io/alexgerv/generator-node-es6-toolbox.svg
