@@ -8,7 +8,7 @@ const run = () => helpers.run(path.join(__dirname, '../generators-src/app'));
 describe('generator', () => {
   const files = [
     'src/index.js',
-    'test/index.js',
+    'test/index.spec.js',
     '.babelrc',
     '.editorconfig',
     '.gitignore',
