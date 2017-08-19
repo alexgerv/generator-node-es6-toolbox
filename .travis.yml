@@ -5,6 +5,9 @@ node_js:
   - 4
 before_install: yarn global add greenkeeper-lockfile@1
 before_script: greenkeeper-lockfile-update
+script: npm run test -- --coverage
 after_script:
   - greenkeeper-lockfile-upload
   - 'cat ./coverage/lcov.info | coveralls'
+cache:
+  yarn: true
