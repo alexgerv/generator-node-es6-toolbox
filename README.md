@@ -1,4 +1,6 @@
 # generator-node-es6-toolbox [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/alexgerv/generator-node-es6-toolbox.svg)](https://greenkeeper.io/)
 > Opinionated nodejs stack with tests, documentation, ES6 support through babel.
 
 ## Installation
