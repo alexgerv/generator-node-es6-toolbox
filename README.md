@@ -13,7 +13,7 @@ npm install -g generator-node-es6-toolbox
 Then generate your new project:
 
 ```bash
-yo node-es-6-toolbox
+yo node-es6-toolbox
 ```
 
 ## License
